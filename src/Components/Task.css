@@ -1,0 +1,12 @@
+.remove-task-button {
+    background-color: #ac3b61;
+    height: 32px;
+    color: white;
+    border-radius: 4px;
+    width: 70px;
+    border: none;
+}
+
+.remove-task-button:hover {
+    cursor: pointer;
+}
