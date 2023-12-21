@@ -1,0 +1,39 @@
+.taskContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 1rem;
+}
+.taskItem {
+    display: flex;
+    flex-direction: row;
+    gap: .6rem;
+    margin-inline: 3rem;
+    text-decoration: none;
+    width: 100%;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.taskCheck {
+    width: 1rem;
+}
+
+.taskText{
+    font-size: 1.4rem;
+    color: #747274;
+    font-weight: 600;
+}
+
+.taskDate {
+    width: 50%;
+}
+
+.taskCreatedAt {
+    font-size: 1.1rem;
+    color: #747274;
+    font-weight: 500;
+}
