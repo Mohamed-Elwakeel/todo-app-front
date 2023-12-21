@@ -15,7 +15,3 @@ function App() {
 
 export default App;
 
-// The user should be:
-// Able to add a newTodo
-// Filter the tasks by (done/not)
-// Edit a task
