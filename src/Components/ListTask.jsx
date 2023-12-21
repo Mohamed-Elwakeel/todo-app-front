@@ -10,7 +10,7 @@ export const ListTask = () => {
   return (
     <ul className="tasks-list">
       {tasks.map((todo) => (
-        <Task id={todo.id} title={todo.name} completed={todo.status} />
+        <Task id={todo.id} title={todo.name} completed={todo.status} createdAt={todo.createdAt}/>
       ))}
     </ul>
   );
