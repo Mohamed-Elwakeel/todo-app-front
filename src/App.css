@@ -2,7 +2,7 @@ body {
   background: url(./assets/12.jpg) no-repeat center center fixed;
 }
 
-.App {
+.todoCard {
   /* display: flex;
   align-items: center;
   flex-direction: column; */
@@ -23,4 +23,21 @@ body {
   font-weight: 700;
   margin: 2rem;
   text-align: center;
+}
+
+.appInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 3rem;
+  color: #f5f5f5;
+}
+
+.appInfo h4 {
+  font-size: 1rem;
+}
+
+.appInfo div {
+  font-size: 1.2rem;
 }
