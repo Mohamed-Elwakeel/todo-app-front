@@ -4,6 +4,7 @@ import { AddTask } from "./Components/AddTask/AddTask";
 import { ListTask } from "./Components/ListTask";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
+import CardFooter from "./Components/CardFooter/CardFooter";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -25,6 +26,7 @@ function App() {
         </div>
         <AddTask />
         <ListTask />
+        <CardFooter />
       </div>
       <div className="appInfo">
         <h4>Double Click to Edit a task</h4>
