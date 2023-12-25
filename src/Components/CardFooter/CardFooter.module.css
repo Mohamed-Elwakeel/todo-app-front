@@ -1,0 +1,25 @@
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 2rem;
+    padding: 0.5rem;
+}
+
+.footerContainer h4 {
+    color: #a5aedf;
+    text-shadow: 1px 1px 1px #555;
+}
+
+.footerContainer button {
+    background: none;
+    color: #A5AEFD;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.footerContainer button:hover {
+    cursor: pointer;
+    text-decoration: none; 
+}

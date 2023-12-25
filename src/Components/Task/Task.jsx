@@ -1,28 +1,29 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { deleteTask } from "../../redux/tasksSlice";
-import "./Task.css";
+import { toggleTask } from "../../redux/tasksSlice"
+import styles from "./Task.module.css";
 
-export const Task = ({ id, title }) => {
+export const Task = ({ id, title, createdAt, completed }) => {
   const dispatch = useDispatch();
 
-  const removeTask = () => {
-    dispatch(deleteTask({ id: id }));
+  const handleCheckedBox = () => {
+    dispatch(toggleTask({ id: id }));
   };
 
   return (
-    <li className="task-item">
-      <div>{title}</div>
-      <div>
-        <button
-          className="remove-task-button"
-          onClick={() => {
-            removeTask();
-          }}
-        >
-          Delete
-        </button>
+    <div className={styles.taskContainer}>
+      <li className={styles.taskItem}>
+        <input
+          className={styles.taskCheck}
+          type="checkbox"
+          checked={completed}
+          onChange={handleCheckedBox}
+        ></input>
+        <p className={`${styles.taskText} ${completed ? styles.checked : ''}`}>{title}</p>
+      </li>
+      <div className={styles.taskDate}>
+        <p className={styles.taskCreatedAt}>{createdAt}</p>
       </div>
-    </li>
+    </div>
   );
 };
