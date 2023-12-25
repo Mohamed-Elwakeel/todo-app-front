@@ -21,9 +21,16 @@ export const tasksSlice = createSlice({
       const newTask = {
         id: new Date().getTime(), // Convert the Date object to a timestamp
         name: action.payload.task,
-        createdAt: formatDate(new Date()) // Store the creation time as a formatted string
+        createdAt: formatDate(new Date()), // Store the creation time as a formatted string
+        completed: false,
       };
-      state.push(newTask);
+      state.unshift(newTask);
+    },
+    toggleTask: (state, action) => {
+      const task = state.find((item) => item.id === action.payload.id);
+      if (task) {
+        task.completed = !task.completed
+      }
     },
     deleteTask: (state, action) => {
       return state.filter((item) => item.id !== action.payload.id);
@@ -31,6 +38,6 @@ export const tasksSlice = createSlice({
   },
 });
 
-export const { addTask, deleteTask } = tasksSlice.actions;
+export const { addTask, toggleTask, deleteTask } = tasksSlice.actions;
 
 export default tasksSlice.reducer;
