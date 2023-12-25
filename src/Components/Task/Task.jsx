@@ -1,18 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch } from "react-redux";
-import { deleteTask } from "../../redux/tasksSlice";
+import { toggleTask } from "../../redux/tasksSlice"
 import styles from "./Task.module.css";
 
-export const Task = ({ id, title, createdAt }) => {
-  const [isChecked, setIsChecked] = useState(false);
+export const Task = ({ id, title, createdAt, completed }) => {
   const dispatch = useDispatch();
 
-  // const removeTask = () => {
-  //   dispatch(deleteTask({ id: id }));
-  // };
-
   const handleCheckedBox = () => {
-    setIsChecked(!isChecked);
+    dispatch(toggleTask({ id: id }));
   };
 
   return (
@@ -21,23 +16,13 @@ export const Task = ({ id, title, createdAt }) => {
         <input
           className={styles.taskCheck}
           type="checkbox"
-          checked={isChecked}
+          checked={completed}
           onChange={handleCheckedBox}
         ></input>
-        <p className={`${styles.taskText} ${isChecked ? styles.checked : ''}`}>{title}</p>
+        <p className={`${styles.taskText} ${completed ? styles.checked : ''}`}>{title}</p>
       </li>
       <div className={styles.taskDate}>
         <p className={styles.taskCreatedAt}>{createdAt}</p>
-      </div>
-      <div>
-        {/* <button
-          className={styles.deleteBtn}
-          onClick={() => {
-            removeTask();
-          }}
-        >
-          Delete
-        </button> */}
       </div>
     </div>
   );
