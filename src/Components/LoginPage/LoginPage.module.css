@@ -1,4 +1,4 @@
-.registerContainer {
+.loginConatiner {
     background: url(../../assets//debut_light.png);
     width: 50%;
     padding: 1.618em;
@@ -8,23 +8,23 @@
     box-shadow: 0 5px 15px #444, inset 0 -5px 35px #999;
 }
 
-.registerContainer header {
+.loginConatiner header {
     color: #555;
     font-size: 2rem;
-    font-family: 'Cabin', 'sans-serif';
+    font-family: 'cabin', 'sans-serif';
     font-weight: 700;
     margin-block: 1.2rem;
     text-align: center;
 }
 
-.formConatiner {
+.loginForm {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
     padding-inline: 2rem;
 }
 
-.formConatiner input {
+.loginForm input {
     padding: 0.7rem 1.15rem;
     margin: 0.5rem 0;
     border: 1px solid #ccc;
@@ -33,7 +33,7 @@
     box-sizing: border-box; */
 }
 
-.formConatiner button {
+.loginForm button {
     width: 75%;
     background-color: #555;
     color: white;
@@ -46,7 +46,6 @@
     cursor: pointer;
 }
 
-.formConatiner button:hover {
+.loginForm button:hover {
     background-color: #333;
-    /* background-color: rgba(0, 0, 0, 0.3); */
 }
