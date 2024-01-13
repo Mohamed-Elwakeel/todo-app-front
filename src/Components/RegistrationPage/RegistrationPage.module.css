@@ -10,9 +10,43 @@
 
 .registerContainer header {
     color: #555;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Cabin', 'sans-serif';
     font-weight: 700;
-    margin: 2rem;
+    margin-block: 1.2rem;
     text-align: center;
+}
+
+.formConatiner {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-inline: 2rem;
+}
+
+.formConatiner input {
+    padding: 0.7rem 1.15rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* display: inline-block;
+    box-sizing: border-box; */
+}
+
+.formConatiner button {
+    width: 75%;
+    background-color: #555;
+    color: white;
+    padding: 0.8rem 1.25rem;
+    margin: auto;
+    margin-bottom: 1.4rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formConatiner button:hover {
+    background-color: #333;
+    /* background-color: rgba(0, 0, 0, 0.3); */
 }

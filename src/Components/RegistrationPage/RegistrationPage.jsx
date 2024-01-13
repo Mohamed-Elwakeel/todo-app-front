@@ -31,7 +31,7 @@ const RegistrationPage = () => {
                     /^[a-zA-Z0-9]{3,30}$/,
                     "The username should only contain letters and numbers, it should not contain spaces or signs"
                 ),
-            gender: yup.string("Choose gender").trim().required("Required"),    
+            // gender: yup.string("Choose gender").trim().required("Required"),    
             email: yup.string().email("Invalid email address").required("Required"),
             password: yup.string().required("Required"),
         }),
@@ -42,13 +42,13 @@ const RegistrationPage = () => {
 
     return (
         <div className={styles.registerContainer}>
-            <header>Register a new account</header>
-            <form onSubmit={formik.handleSubmit}>
-                <label htmlFor="name">Name:</label>
+            <header>Sign Up</header>
+            <form className={styles.formConatiner} onSubmit={formik.handleSubmit}>
                 <input
                     id="name"
                     name="name"
                     type="text"
+                    placeholder="Fullname"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.name}
@@ -56,11 +56,11 @@ const RegistrationPage = () => {
                 {formik.touched.name && formik.errors.name ? (
                     <div>{formik.errors.name}</div>
                 ) : null}
-                <label htmlFor="userName">User Name:</label>
                 <input
                     id="userName"
                     name="userName"
                     type="text"
+                    placeholder="User Name"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.userName}
@@ -68,11 +68,11 @@ const RegistrationPage = () => {
                 {formik.touched.userName && formik.errors.userName ? (
                     <div>{formik.errors.userName}</div>
                 ) : null}
-                <label htmlFor="email">Email Address</label>
                 <input
                     id="email"
                     name="email"
                     type="email"
+                    placeholder="Email"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.email}
@@ -80,11 +80,11 @@ const RegistrationPage = () => {
                 {formik.touched.email && formik.errors.email ? (
                     <div>{formik.errors.email}</div>
                 ) : null}
-                <label htmlFor="password">Password</label>
                 <input
                     id="password"
                     name="password"
                     type="password"
+                    placeholder="Password"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.password}
@@ -92,11 +92,11 @@ const RegistrationPage = () => {
                 {formik.touched.password && formik.errors.password ? (
                     <div>{formik.errors.password}</div>
                 ) : null}
-                <label htmlFor="confirmPassword">Confirm Password</label>
                 <input
                     id="confirmPassword"
                     name="confirmPassword"
                     type="password"
+                    placeholder="Confirm password"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.password}
@@ -105,7 +105,7 @@ const RegistrationPage = () => {
             </form>
             <h3>
                 Already have an account?
-                <Link to="/login">Login</Link>
+                <Link to="/login"> Sign In</Link>
             </h3>
             <Outlet />
         </div>
