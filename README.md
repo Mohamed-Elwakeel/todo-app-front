@@ -6,7 +6,6 @@
 ## Screenshot
 
 ![Home Page](/src/assets/ToDo-App.png)
-*Caption: Home page displaying the todo list in the Todo App.*
 
 ## Demo
 
