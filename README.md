@@ -3,6 +3,11 @@
 - A simple and intuitive Todo App frontend built with React.js. This application provides three main pages for managing todos: Sign In, Sign Up, and Home.
 - I am still working on the backend of this project and the setting up the database, so you todo data and login data will not be saved for NOW.
 
+## Screenshot
+
+![Home Page](/src/assets/ToDo-App.png)
+*Caption: Home page displaying the todo list in the Todo App.*
+
 ## Demo
 
 [Live Demo](#) - Still working on it. STAY TUNED.
