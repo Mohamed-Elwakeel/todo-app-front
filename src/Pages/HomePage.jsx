@@ -28,7 +28,7 @@ const HomePage = () => {
                 <CardFooter />
             </div>
             <div className="appInfo">
-                <h4>Double Click to Edit a task</h4>
+                {/* <h4>Double Click to Edit a task</h4> */}
                 <div>Created with: React JS, Material UI, CSS3, & Redux toolkit</div>
                 <div>Coded by: Mohamed Elwakeel</div>
             </div>
