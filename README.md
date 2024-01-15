@@ -8,7 +8,7 @@
 
 ## Demo
 
-<a href="https://todo-static-front.netlify.app/your-specific-page" target="_blank">Live Demo</a>
+<a href="https://todo-static-front.netlify.app/" target="_blank">Live Demo</a>
 
 ## Features
 
