@@ -8,7 +8,8 @@
 
 ## Demo
 
-[https://todo-static-front.netlify.app/](#)
+[Live Demo](https://todo-static-front.netlify.app/)
+
 
 ## Features
 
