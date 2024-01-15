@@ -5,7 +5,7 @@ body {
 
 .todoCard {
   background: url(./assets/debut_light.png);
-  width: 50%;
+  width: 60%;
   padding: 1.618em;
   margin: auto;
   margin-top: 3rem;
@@ -21,10 +21,10 @@ body {
 
 .App-header header {
   color: #555;
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 11vw, 4.5rem);
   font-family: 'Cabin', 'sans-serif';
   font-weight: 700;
-  margin: 2rem;
+  margin-block: 2rem;
   text-align: center;
 }
 
@@ -42,7 +42,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 0.8rem;
+  margin: auto;
   margin-top: 3rem;
 }
 
@@ -52,4 +54,15 @@ body {
 
 .appInfo div {
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 40em) {
+  .todoCard {
+    width: 75%;
+  }
+
+  .appInfo {
+    width: 70%;
+  }
+  
 }

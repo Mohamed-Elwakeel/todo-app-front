@@ -10,7 +10,7 @@
 
 .loginConatiner header {
     color: #555;
-    font-size: 2rem;
+    font-size: clamp(2.5rem, 10vw, 4.5rem);
     font-family: 'cabin', 'sans-serif';
     font-weight: 700;
     margin-block: 1.2rem;

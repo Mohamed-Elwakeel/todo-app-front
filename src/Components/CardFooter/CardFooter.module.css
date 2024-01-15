@@ -1,8 +1,10 @@
 .footerContainer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-inline: 2rem;
     padding: 0.5rem;
+    gap: 5px;
 }
 
 .footerContainer h4 {
@@ -22,4 +24,13 @@
 .footerContainer button:hover {
     cursor: pointer;
     text-decoration: none; 
+}
+
+@media screen and (max-width: 44em) {
+    .footerContainer {
+        margin-inline: auto;
+        padding: 1px;
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
 }
