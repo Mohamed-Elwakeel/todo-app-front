@@ -8,7 +8,7 @@
 
 ## Demo
 
-[Live Demo](#) - Still working on it. STAY TUNED.
+[https://todo-static-front.netlify.app/](#)
 
 ## Features
 
