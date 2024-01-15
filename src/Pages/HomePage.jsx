@@ -1,27 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import { AddTask } from "../Components/AddTask/AddTask";
-import { ListTask } from "../Components/ListTask";
-import LightModeIcon from "@mui/icons-material/LightMode";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
 import CardFooter from "../Components/CardFooter/CardFooter";
+import { ListTask } from "../Components/ListTask";
 
 const HomePage = () => {
-    const [darkMode, setDarkMode] = useState(false);
+    // const [darkMode, setDarkMode] = useState(false);
 
-    const toggleDarkMode = () => {
-        setDarkMode(!darkMode);
-    };
+    // const toggleDarkMode = () => {
+    //     setDarkMode(!darkMode);
+    // };
 
     return (
         <div className="App">
-            <div className={`todoCard ${darkMode ? "dark-mode" : "light-mode"}`}>
+            {/* <div className={`todoCard ${darkMode ? "dark-mode" : "light-mode"}`}> */}
+                <div className="todoCard">
                 <div className="App-header">
                     <header>Todo App</header>
-                    {darkMode ? (
+                    {/* {darkMode ? (
                         <LightModeIcon className="iconLight" onClick={toggleDarkMode} />
                     ) : (
                         <DarkModeIcon className="iconDark" onClick={toggleDarkMode} />
-                    )}
+                    )} */}
                 </div>
                 <AddTask />
                 <ListTask />
